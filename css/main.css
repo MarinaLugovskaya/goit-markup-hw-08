@@ -1,15 +1,16 @@
 :root {
   --primary-text-color: #212121;
   --title-text-color: #757575;
-  --accent-color: #2196F3;
+  --accent-color: #2196f3;
   --primary-white-color: #ffffff;
-  --body-bg-color: #E5E5E5;
-  --primary-bg-color: #2F303A;
-  --secondary-bg-color: #F5F4FA;
+  --body-bg-color: #e5e5e5;
+  --primary-bg-color: #2f303a;
+  --secondary-bg-color: #f5f4fa;
   --logo-color: #000000;
-  --card-set: 20px;
-  --border-clients: #AFB1B8;
-  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  --card-set: 30px;
+  --border-clients: #afb1b8;
+  --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   --font-family-base: 'Roboto', sans-serif;
 }
 
@@ -1220,6 +1221,16 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
+@media screen and (max-width: 1199px) {
+  .thumb-imput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .form-title {
   color: var(--primary-white-color);
   font-family: 'Roboto', sans-serif;
@@ -1696,8 +1707,6 @@ img {
 /* card  */
 .card-thumb {
   position: relative;
-  width: 370px;
-  height: 294px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -1846,12 +1855,6 @@ img {
   margin-right: 20px;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
-
 .menu-seti__link {
   font-family: 'Roboto', sans-serif;
   color: var(--accent-color);
@@ -1870,6 +1873,12 @@ img {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle:hover, .menu-toggle:focus {
