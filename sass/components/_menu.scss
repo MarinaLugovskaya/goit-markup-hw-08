@@ -1,5 +1,4 @@
 .menu {
-  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -10,6 +9,7 @@
     display: none;
   }
 }
+
 .mobile-menu__item {
   margin-bottom: 32px;
 
@@ -27,49 +27,83 @@
   line-height: 47px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  margin-bottom: 32px;
 
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}
 
 .menu-contact__tel {
   font-family: 'Roboto', sans-serif;
+  color: var(--title-text-color);
   font-style: normal;
   font-weight: 500;
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  margin-top: 32px;
+  margin-top: 306px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .menu-contact__mail {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: 32px;
+  margin-bottom: 64px;
+  text-decoration: none;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
+
 .menu--flex {
   display: flex;
 }
+
 .menu-seti__item {
   margin-right: 20px;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
+.menu-seti__link {
+  font-family: 'Roboto', sans-serif;
+  color: var(--accent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
 }
+
 .menu-toggle {
+  min-width: 40px;
+  min-height: 40px;
   border: none;
   background-color: transparent;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 
   &:hover,
   &:focus {
@@ -78,6 +112,8 @@
 }
 
 .menu-container {
+  max-width: 480px;
+  min-height: 320px;
   position: fixed;
   top: 0;
   left: 0;
@@ -88,18 +124,19 @@
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
 }
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
-.menu-container .menu-toggle {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
+.menu-container .is-open {
+  transform: translateX(100%);
 }
 
 .menu {
@@ -108,13 +145,6 @@
   list-style: none;
 }
 
-.mobile-menu__link {
-  display: block;
-  padding: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.mobile-menu {
+.mobile-menu__close {
   fill: var(----primary-text-color);
 }
