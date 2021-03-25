@@ -1,0 +1,120 @@
+.footer .container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.container--space-between {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.adress-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.adress-seti {
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
+.footer {
+  background-color: var(--primary-text-color);
+  padding: 60px 0;
+  /* outline: 2px solid coral; */
+}
+
+.footer__logo {
+  color: var(--primary-white-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.footer-adress {
+  // margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: 70px;
+  }
+}
+
+.footer-adress__text {
+  color: var(--primary-white-color);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+  /* outline: 2px solid coral; */
+}
+
+.contacts {
+  margin: 0;
+  padding: 0;
+
+  .contacts__item {
+    margin-top: 8px;
+  }
+}
+
+.contacts__phone {
+  padding: 0;
+  margin-bottom: 8px;
+  /* outline: 2px solid coral; */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts__mail {
+  margin-top: 0;
+  padding: 0;
+  /* outline: 2px solid coral; */
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__phone,
+.contacts__mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
