@@ -17,17 +17,19 @@
         <div class="container container--flex">
     <nav class="nav">
         <a href="./index.html" class="logo"><span>Web</span>Studio</a>
+        <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false"
+            aria-label="открытие мобильного меню">
+            <svg class="header__menu" width="40" height="40">
+                <use class="header__icon" href="./images/menu-button.svg#icon-menu-mobile"></use>
+            </svg>
+        </button>
         <ul class="site-nav list">
             <li class="site-nav__item"><a href="" class="site-nav__link site-nav__link--current">Студия</a></li>
             <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
             <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
         </ul>
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="mobile-menu" width="40" height="40">
-            <use href="./images/menu-button.svg#icon-menu-mobile"></use>
-        </svg>
-    </button>
     </nav>
+        
 
         <ul class="contact list">
             <li class="contact__item">
@@ -55,6 +57,7 @@
     <button type="submit" class="button" data-modal-open>Заказать услугу</button>
 </div>
 </div>
+
 </section>
 
 <section class="section">
@@ -394,41 +397,6 @@
 </section>
 
 </main>
-<div class="menu-container js-menu-container" id="mobile-menu">
-<button class="menu-toggle js-close-menu">
-    <svg class="mobile-menu__close" width="40" height="40">
-        <use href="./images/menu-button.svg#icon-menu-mobile-close"></use>
-    </svg>
-</button>
-<ul class="menu list">
-    <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--current">Студия</a></li>
-    <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Портфолио</a></li>
-    <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакты</a></li>
-</ul>
-
-<ul class="menu list">
-<li class="menu-contact__item">
-    <a href="tel:+380961111111" class="menu-contact__tel">+38 096 111 11 11</a>
-</li>
-    <li class="menu-contact__item">
-        <a href="mailto:info@devstudio.com" class="menu-contact__mail">mailto:info@devstudio</a>
-    </li>
-</ul>
-<ul class="menu list menu--flex">
-    <li class="menu-seti__item">
-        <a href="" class="menu-seti__link">Instagram</a>
-    </li>
-    <li class="menu-seti__item">
-        <a href="" class="menu-seti__link">Twitter</a>
-    </li>
-    <li class="menu-seti__item">
-        <a href="" class="menu-seti__link">Facebook</a>
-    </li>
-    <li class="menu-seti__item">
-        <a href="" class="menu-seti__link">LinkedIn</a>
-    </li>
-</ul>
-</div>
 <footer class="footer">
     <div class="container container--space-between">
         <div class="adress-container">
@@ -561,9 +529,44 @@
          </form>
     </div> 
     </div>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile__icon" width="40" height="40">
+                <use href="./images/menu-button.svg#icon-menu-mobile-close"></use>
+            </svg>
+        </button>
+        <ul class="mobile list">
+            <li class="mobile__item"><a href="" class="mobile__link mobile__link--current">Студия</a></li>
+            <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mob__item">
+                <a href="mailto:info@devstudio.com" class="mobile-contacts__link mobile-contacts__link--grey">
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="mob__item"><a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--blue">
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+        <ul class="mobile-networks">
+            <li class="mobile-networks__item"><a class="mobile-networks__link" href="https://www.instagram.com" aria-label="instagram">
+                    Instagram</a>
+            </li>
+            <li class="mobile-networks__item"><a class="mobile-networks__link" href="https://www.twitter.com" aria-label="twitter">
+                    Twitter</a></li>
+            <li class="mobile-networks__item"><a class="mobile-networks__link" href="https://www.facebook.com" aria-label="facebook">
+                    Facebook</a></li>
+            <li class="mobile-networks__item"><a class="mobile-networks__link" href="https://www.linkedin.com" aria-label="linkedin">
+                    LinkedIn</a></li>
+        </ul>
+    </div>
     <script src="./js/modal.js"></script>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
         integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
         crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
