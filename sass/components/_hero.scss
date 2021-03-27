@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(/images/hero1xmob.jpg);
+    url(../images/hero1xmob.jpg);
   // background-position: center;
   background-size: cover;
 
@@ -22,7 +22,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero-overlay {
-      background-image: url(/images/hero2xmob.jpg);
+      background-image: url(../images/hero2xmob.jpg);
       background-size: cover;
     }
   }
@@ -34,7 +34,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero1xtabl.jpg);
+      url(../images/hero1xtabl.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -42,7 +42,7 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .hero-overlay {
-        background-image: url(/images/hero2xtabl.jpg);
+        background-image: url(../images/hero2xtabl.jpg);
         background-size: cover;
       }
     }
@@ -58,7 +58,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(/images/hero1xdeskt.jpg);
+      url(../images/hero1xdeskt.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (-webkit-min-device-pixel-ratio: 2),
@@ -66,7 +66,7 @@
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       .hero-overlay {
-        background-image: url(/images/hero2xdeskt.jpg);
+        background-image: url(../images/hero2xdeskt.jpg);
         background-size: cover;
       }
     }
@@ -81,7 +81,7 @@
 // }
 
 .title-button {
-  width: 696px;
+  // width: 696px;
   margin: 0 auto;
   text-align: center;
 

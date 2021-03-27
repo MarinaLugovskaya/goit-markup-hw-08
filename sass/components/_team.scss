@@ -44,16 +44,16 @@
 
 .team-card__thumb {
   height: 460px;
-  width: 450px;
+  // width: 450px;
 
   @media screen and (min-width: 768px) {
     height: 374px;
-    max-width: 354px;
+    // max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
     height: 260px;
-    max-width: 270px;
+    // max-width: 270px;
   }
 }
 
