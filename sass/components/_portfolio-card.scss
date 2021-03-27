@@ -32,7 +32,8 @@
 .project {
   display: flex;
   /* outline: 1px solid palevioletred; */
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set));
   margin-top: calc(-1 * var(--card-set));

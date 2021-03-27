@@ -302,20 +302,9 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .contact__link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media screen and (max-width: 1199px) {
-  .contact__link {
+  .contact__link--margin {
     margin-top: 10px;
-  }
-  .contact__link:first-child {
-    margin-top: 0;
   }
 }
 
@@ -343,7 +332,6 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 1600px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -377,7 +365,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-overlay {
     max-width: 1600px;
-    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero1xdeskt.jpg);
@@ -674,17 +661,20 @@ img {
 
 .team-card__thumb {
   height: 460px;
+  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .team-card__thumb {
     height: 374px;
+    width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-card__thumb {
     height: 260px;
+    max-width: 270px;
   }
 }
 
@@ -1223,19 +1213,17 @@ img {
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1199px) {
-  .form-title .form-title {
-    margin-top: 60px;
+  .form-title {
+    margin-bottom: 20px;
   }
 }
 
@@ -1652,7 +1640,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   /* outline: 1px solid palevioletred; */
-  margin: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-set));
@@ -1845,6 +1834,7 @@ img {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .mobile-contacts__link--blue {
@@ -1895,5 +1885,6 @@ img {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */

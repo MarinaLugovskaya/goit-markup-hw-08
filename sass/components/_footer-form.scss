@@ -49,16 +49,13 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 20px;
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
 
   @media screen and (max-width: 1199px) {
-    .form-title {
-      margin-top: 60px;
-    }
+    margin-bottom: 20px;
   }
+
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
   }
