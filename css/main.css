@@ -27,7 +27,7 @@
   padding-bottom: 0px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -347,14 +347,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1xmob.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1xmob.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero1xmob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1xmob.jpg);
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero-overlay .hero-overlay {
-    background-image: url(/images/hero2xmob.jpg);
+    background-image: url(../images/hero2xmob.jpg);
     background-size: cover;
   }
 }
@@ -362,14 +362,14 @@ img {
 @media screen and (min-width: 768px) {
   .hero-overlay {
     max-width: 1600px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1xtabl.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1xtabl.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero1xtabl.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1xtabl.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-overlay .hero-overlay {
-    background-image: url(/images/hero2xtabl.jpg);
+    background-image: url(../images/hero2xtabl.jpg);
     background-size: cover;
   }
 }
@@ -380,20 +380,19 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(/images/hero1xdeskt.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero1xdeskt.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero1xdeskt.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1xdeskt.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-overlay .hero-overlay {
-    background-image: url(/images/hero2xdeskt.jpg);
+    background-image: url(../images/hero2xdeskt.jpg);
     background-size: cover;
   }
 }
 
 .title-button {
-  width: 696px;
   margin: 0 auto;
   text-align: center;
 }
@@ -675,20 +674,17 @@ img {
 
 .team-card__thumb {
   height: 460px;
-  width: 450px;
 }
 
 @media screen and (min-width: 768px) {
   .team-card__thumb {
     height: 374px;
-    max-width: 354px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team-card__thumb {
     height: 260px;
-    max-width: 270px;
   }
 }
 
@@ -1751,9 +1747,8 @@ img {
 .menu-toggle {
   position: absolute;
   right: 15px;
+  top: 10px;
   margin-left: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
   border: none;
   background-color: transparent;
   outline: none;
@@ -1770,31 +1765,26 @@ img {
 }
 
 .menu-container {
-  max-width: 480px;
-  min-height: 796px;
-  background-color: var(--primary-white-color);
-  z-index: 9999;
-}
-
-.mobile-menu.is-open {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-}
-
-.mobile-menu {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: 250ms;
-  transition: 250ms;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
   overflow-y: scroll;
-  z-index: 999;
   background-color: var(--primary-white-color);
+  z-index: 9999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media (min-width: 768px) {

@@ -3,12 +3,6 @@
 }
 
 .team {
-  // font-family: 'Roboto', sans-serif;
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 36px;
-  // line-height: 42px;
-  // text-align: center;
   margin: 0;
   padding-left: 0;
   padding-right: 0;
@@ -44,16 +38,16 @@
 
 .team-card__thumb {
   height: 460px;
-  // width: 450px;
+  width: 450px;
 
   @media screen and (min-width: 768px) {
     height: 374px;
-    // max-width: 354px;
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
     height: 260px;
-    // max-width: 270px;
+    width: 270px;
   }
 }
 
