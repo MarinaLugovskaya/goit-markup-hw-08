@@ -23,7 +23,7 @@
 }
 
 .footer {
-  background-color: var(--primary-text-color);
+  background-color: var(--footer-bg);
   padding: 60px 0;
   /* outline: 2px solid coral; */
 }
@@ -67,6 +67,10 @@
   margin: 0;
   padding: 0;
 
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   .contacts__item {
     margin-top: 8px;
   }
@@ -88,10 +92,6 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .contacts__phone,
