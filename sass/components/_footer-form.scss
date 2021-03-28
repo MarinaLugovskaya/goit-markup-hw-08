@@ -51,10 +51,7 @@
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
@@ -68,7 +65,10 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 
 .button__send {
