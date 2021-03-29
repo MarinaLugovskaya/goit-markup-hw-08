@@ -23,6 +23,10 @@
 .social-networks {
   margin-left: auto;
 
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
@@ -33,10 +37,6 @@
   justify-content: center;
   padding: 0;
   margin: 0;
-
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .networks__item {

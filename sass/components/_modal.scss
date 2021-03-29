@@ -51,8 +51,8 @@
   right: 1px;
   cursor: pointer;
   display: flex;
-  width: 8px;
-  height: 8px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--primary-white-color);
@@ -171,7 +171,6 @@
 /* Checkbox */
 
 .checkbox {
-  display: flex;
   color: var(--title-text-color);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
@@ -181,6 +180,10 @@
   letter-spacing: 0.01em;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 
 .checkbox__input {
@@ -226,6 +229,7 @@
 
 /* button */
 .form__button-sub {
+  display: flex;
   padding: 10px 55px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);

@@ -46,6 +46,7 @@
 
 .feature__icon {
   display: flex;
+  height: 120px;
   background-color: var(--secondary-bg-color);
   justify-content: center;
   align-items: center;
@@ -63,6 +64,7 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     justify-content: left;
