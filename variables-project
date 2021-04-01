@@ -1,0 +1,10 @@
+$primary-title-color: #111518;
+$secondary-title-color: #FFFFFF;
+$primary-text-color: #B9B9B9;
+$additional-text-color: #3D3D3D;
+$accent-color: #FF6B09;
+$light-bg-color: #E5E5E5;
+$garant-bg-color: #F1F1F1;
+$vk-networks-color: #436EAB;
+
+"terminal.integrated.shell.windows": "C:\\Users\\Marina\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Git",
